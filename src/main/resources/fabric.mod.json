@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "bbsfirstmod",
+	"version": "${version}",
+	"name": "BBs First Mod",
+	"description": "This mod adds a blahaj sword. :3",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Hyphae05/BBs-First-Mod 1.21.1"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bbsfirstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hypatia05.bbsfirstmod.BBsFirstMod"
+		],
+		"fabric-datagen": [
+			"net.hypatia05.bbsfirstmod.BBsFirstModDataGenerator"
+		],
+        "client": [
+          "net.hypatia05.bbsfirstmod.BBsFirstModClient"
+        ]
+	},
+	"mixins": [
+		"bbsfirstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
